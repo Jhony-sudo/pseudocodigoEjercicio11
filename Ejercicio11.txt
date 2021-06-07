@@ -1,0 +1,32 @@
+Algoritmo Ej11
+	NumImpar = 0
+	NumPar = 0
+	Num2Doc = 0
+	NumMayor = 1
+	Contador = 0
+	Para i=1 hasta 10 Con Paso 1
+		Num = Aleatorio(1,36)
+		Escribir Num
+		si Num%2 = 0
+			Si Num <> 0
+				NumPar = NumPar + Num
+				Contador = Contador + 1
+			FinSi
+		FinSi
+		Si Num%2 <> 0
+			NumImpar = NumImpar + 1
+		FinSi
+		Si Num>=13 Y Num <= 24
+			Num2Doc = Num2Doc + 1
+		FinSi
+		Si Num > NumMayor
+			NumMayor =  Num
+		FinSi
+	FinPara
+	Escribir "Hay un total de  " NumImpar " numeros impares"
+	Escribir  "Promedio de los numeros pares " NumPar/Contador
+	Escribir "El numero mas grande generado es " NumMayor
+	Escribir "Hay un total de " Num2Doc " numeros que se encuentran en la segunda docena"
+	
+	
+FinAlgoritmo
